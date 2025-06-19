@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksdk_docs=self.webpackChunksdk_docs||[]).push([[5673],{84:s=>{s.exports=JSON.parse('{"metadata":{"permalink":"/sdk-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

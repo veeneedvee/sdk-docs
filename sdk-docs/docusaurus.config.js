@@ -27,11 +27,12 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'projekt-K', // Usually your GitHub org/user name.
+  organizationName: 'veeneedvee', // Usually your GitHub org/user name.
   projectName: 'sdk-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  deploymentBranch: 'gh-pages',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

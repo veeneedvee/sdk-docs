@@ -8,7 +8,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -28,14 +28,33 @@ function HomepageHeader() {
   );
 }
 
+function CustomWelcomeSection() {
+  return (
+    <section style={{ padding: '2rem 0', textAlign: 'center' }}>
+      <h2>Welcome to the SDK Docs</h2>
+      <p style={{ fontSize: '1.2rem' }}>
+        Click below to jump directly to the documentation.
+      </p>
+      <Link
+        className="button button--primary button--lg"
+        to="/docs/intro"
+        style={{ marginTop: '1rem' }}
+      >
+        Go to the Docs →
+      </Link>
+    </section>
+  );
+}
+
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="SDK Docs homepage">
       <HomepageHeader />
       <main>
+        <CustomWelcomeSection />
         <HomepageFeatures />
       </main>
     </Layout>
